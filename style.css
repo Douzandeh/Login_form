@@ -1,0 +1,55 @@
+
+
+body{
+	background-color: #42a873;
+}
+
+.login-page{
+	width: 500px;
+    height: 350px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 12rem;
+}
+
+.form{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #e7e7e7;
+}
+
+.btn{
+	width: 190px;
+    height: 30px;
+    background-color: #00bc14;
+}
+
+a{
+	text-decoration: none;
+	color:#00bc14;
+}
+
+.modal{
+    background-color: red;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    top: 30px;
+    transition: all 1s linear;
+    }
