@@ -1,24 +1,34 @@
-let userNameInput = document.querySelector(".userName");
+let $ = document;
 
-let passWordInput = document.querySelector(".passWord");
+let usernameInput = $.querySelector(".username");
 
-let modal = document.querySelector(".modal");
+let passwordInput = $.querySelector(".password");
+
+let usernameMessage = $.querySelector(".username-validation")
+
+let passwordMessage = $.querySelector(".password-validation")
 
 
-function dataValidation () {
-	let usernameValue = userNameInput.value;
-	let passwordValue = passWordInput.value;
-
-	if (usernameValue.length < 12 || passwordValue < 8) {
-		modal.innerHTML = "		lotfan Etalat  Dorosti Vared konid";
-		modal.style.background= "red";
-		modal.style.display = 'inline';
+function usernameValidatio () {
+	if (usernameInput.value.length < 12) {
+		usernameMessage.innerHTML = "*Must Contain 12 Character (Min)";
+		usernameMessage.style.color = 'red';
+		usernameMessage.style.display = 'block';
 	}else {
-		modal.style.background = "green";
-		modal.innerHTML = "Welcome";
-		modal.style.display="inline";
+		usernameMessage.innerHTML = "Correct username Value";
+		usernameMessage.style.color = 'green';
+		usernameMessage.style.display="block";
 	}
-	setTimeout(function(){
-			modal.style.display = 'none';
-		},3000)
+}
+
+function passwordValidatio() {
+	if (passwordInput.value.length < 8) {
+		passwordMessage.innerHTML = "*Must Contain 8 Character (Min)";
+		passwordMessage.style.color = "red";
+		passwordMessage.style.display = "block";
+	}else {
+		passwordMessage.innerHTML = "Correct password Value";
+		passwordMessage.style.color = 'green';
+		passwordMessage.style.display="block";
+	}
 }
