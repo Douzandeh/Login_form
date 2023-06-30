@@ -1,11 +1,11 @@
 
 
 body{
-	background-color: #42a873;
+    background-color: #42a873;
 }
 
 .login-page{
-	width: 500px;
+    width: 500px;
     height: 350px;
     background-color: #fff;
     margin: 0 auto;
@@ -23,33 +23,23 @@ body{
 }
 
 input{
-	margin-bottom: 20px;
-	padding: 10px;
-	background-color: #e7e7e7;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #e7e7e7;
 }
 
 .btn{
-	width: 190px;
+    margin-top: 15px;
+    width: 190px;
     height: 30px;
     background-color: #00bc14;
 }
 
 a{
-	text-decoration: none;
-	color:#00bc14;
+    text-decoration: none;
+    color:#00bc14;
 }
 
-.modal{
-    background-color: red;
-    color: #fff;
-    padding: 30px;
-    border-radius: 10px;
+span{
     display: none;
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    z-index: 999;
-    right: 10px;
-    top: 30px;
-    transition: all 1s linear;
-    }
+}
