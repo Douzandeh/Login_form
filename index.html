@@ -9,15 +9,13 @@
 <body>
 	<div class="login-page">
 		<div class="form">
-			<input type="text" placeholder="username" class="userName">
-			<input type="password" placeholder="password" class="passWord">
+			<input type="text" placeholder="username" class="username" onblur="usernameValidatio ()">
+			<span class="username-validation"></span>
+			<input type="password" placeholder="password" class="password" onblur="passwordValidatio()"  >
+			<span class="password-validation"></span>
 			<button class="btn" onclick="dataValidation()">Login</button>
 			<p class="message">Not registered?<a href="#">Create an account</a></p>
 		</div>
-	</div>
-
-	<div class="modal">
-		lotfan Etalat B Dorosti Vared konid
 	</div>
 	<script src="./script.js"></script>
 </body>
